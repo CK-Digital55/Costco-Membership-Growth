@@ -239,22 +239,19 @@ mse_paid, r2_paid, mse_total, r2_total
 
 **For Paid Memberships:**
 Mean Squared Error (MSE): 
-0.9372
-0.9372
-R-squared (
-�
-2
-R 
-2): 0.9798 
-0.9798
+                0.9372
+                0.9372
+R-squared (R2): 0.9798 
+                0.9798
 
 **For Total Memberships:**
 Mean Squared Error (MSE): 
-2.1632
-2.1632
-R-squared (�2R 2):0.98500.9850
-Both models have high �2R 2
-  values, which indicates a good fit to the observed data. The MSE values are also relatively low, suggesting that the model makes predictions that are close to the actual values.
+                2.1632
+                2.1632
+R-squared (R2): 0.9850
+                0.9850
+
+Both models have high R2 values, which indicates a good fit to the observed data. The MSE values are also relatively low, suggesting that the model makes predictions that are close to the actual values.
 
 
 
