@@ -18,7 +18,7 @@
 
 ## Project walk-through
 
-## Uploaded several datasets and a visualization image:
+ *Uploaded several datasets and a visualization image:*
 
 - Costco Global Membership revenue dataset.csv
 - statistic_id952763_costco_-paid-membership-worldwide-2014-2022.xlsx
