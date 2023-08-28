@@ -1,4 +1,4 @@
-# Costco-Membership-Growth-Prediction-Model
+# Costco Membership Growth Prediction Model
 
 
 
