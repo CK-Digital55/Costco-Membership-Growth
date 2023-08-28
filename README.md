@@ -16,9 +16,9 @@
 - Windows 11
 - Server August 2023
 
-## Project walk-through
+## 1. Project walk-through
 
- 1. *Uploaded several datasets and a visualization image:*
+  *Uploaded several datasets and a visualization image:*
 
 - Costco Global Membership revenue dataset.csv
 - statistic_id952763_costco_-paid-membership-worldwide-2014-2022.xlsx
@@ -30,13 +30,13 @@
 **Let's start by examining each dataset to understand what information is available. Then we can decide on the best way to proceed with building a predictive model.**
 
 
-2. ## Initialize the list to hold the dataset names and previews
+## 2. Initialize the list to hold the dataset names and previews
 
 
-2. ## Read the first few rows of each dataset to understand its structure
+## 3. Read the first few rows of each dataset to understand its structure
 
 
-3. ## Here's a brief overview:
+## 4. Here's a brief overview:
 
 - Costco Global Membership revenue dataset.csv: This dataset seems to contain textual descriptions related to Costco, such as the number of memberships, global revenue, and average sales per warehouse. It doesn't appear 
   to contain numerical data for analysis.
@@ -49,12 +49,12 @@
 
 - lafayette_parish_population_2023.csv: This dataset contains population data for areas in Lafayette Parish for the year 2023.
 
-4. ## Before proceeding, I'll check if the Excel files contain more sheets with data. I'll also skip the initial rows in the Excel files to see if they contain any relevant numerical data for analysis.
+## 5. Before proceeding, I'll check if the Excel files contain more sheets with data. I'll also skip the initial rows in the Excel files to see if they contain any relevant numerical data for analysis.
 
 **Input Function to read Excel sheets and skip initial rows to find data**
 
 
-5. ## Read Excel files and check for additional sheets containing data
+## 6. Read Excel files and check for additional sheets containing data
 
  **We have found some numerical data in the Excel files:**
 
@@ -66,7 +66,7 @@
 
  ## *We used the Membership Growth Prediction: We will predict the future growth of Costco memberships globally*
 
-6. ## Predicting membership growth can provide valuable insights for business strategy and planning. 
+## 7. Predicting membership growth can provide valuable insights for business strategy and planning. 
  **To build a predictive model for global membership growth, I'll consider the following steps:**
 
 - Data Preparation: Clean and preprocess the data for analysis.
@@ -75,32 +75,32 @@
 - Evaluation: Evaluate the model's performance.
 - Prediction: Use the model to make future predictions.
   
-7. ## Let's start with the Data Preparation step. I'll combine the data from the two relevant Excel files— one containing the number of paid Costco members worldwide and the other containing the total number of Costco card holders worldwide. This will give us a more comprehensive view of membership growth
+## 8. Let's start with the Data Preparation step. I'll combine the data from the two relevant Excel files— one containing the number of paid Costco members worldwide and the other containing the total number of Costco card holders worldwide. This will give us a more comprehensive view of membership growth
 
 
 *It appears that the columns are not properly labeled, likely due to the way the Excel sheets were read. I'll clean up these datasets by appropriately renaming the columns and dropping any unnecessary ones. Then, we can proceed with the data merging and analysis.*
 
-8. ## Now we have a cleaned and merged dataset that contains the following information:
+## 9. Now we have a cleaned and merged dataset that contains the following information:
 
 - Year: The year of the data
 - Paid_Memberships_Millions: The number of paid Costco memberships worldwide, in millions
 - Total_Memberships_Millions: The total number of Costco card holders worldwide, in millions
 
-9. ## With this dataset in hand, we can proceed to the Exploratory Data Analysis (EDA) step. Here, we'll visualize the data to identify trends and patterns that can inform our predictive model. 
+## 10. With this dataset in hand, we can proceed to the Exploratory Data Analysis (EDA) step. Here, we'll visualize the data to identify trends and patterns that can inform our predictive model. 
 
 
-10. ## Set the style for the visualizations
+## 11. Set the style for the visualizations
 
-11. ## Create subplots
+## 12. Create subplots
 
-12. ## Plot for Paid Memberships
-
-
-13. ## Plot for Total Memberships
+## 13. Plot for Paid Memberships
 
 
+## 14. Plot for Total Memberships
 
-14. ## *The line plots above showcase the growth trends for both paid and total memberships at Costco from 2015 to 2022:*
+
+
+## 15. *The line plots above showcase the growth trends for both paid and total memberships at Costco from 2015 to 2022:*
 
 - Growth of Paid Memberships Worldwide: There is a steady upward trend in the number of paid memberships. The growth seems to be fairly consistent over the years.
 
@@ -108,35 +108,35 @@
 
 - These trends suggest that a linear or polynomial model might be a good fit for making future predictions.
 
-15. ## Next, we'll move on to Model Building. I'll start by preparing the data for training and testing, and then proceed to fit a model to it.
+## 16. Next, we'll move on to Model Building. I'll start by preparing the data for training and testing, and then proceed to fit a model to it.
 
 
 
-16. ## I started with a simple linear regression model for its interpretability and ease of use. If the linear model performs reasonably well, it may serve our purpose. If not, we can explore more complex models like polynomial regression or even time series models.
+## 17. I started with a simple linear regression model for its interpretability and ease of use. If the linear model performs reasonably well, it may serve our purpose. If not, we can explore more complex models like polynomial regression or even time series models.
 
 - Data Preparation: Separate the features (Year) and labels (Paid_Memberships_Millions and Total_Memberships_Millions).
 - Train the Model: Fit a linear regression model to the data.
 - Evaluation: Evaluate the model's performance using metrics like R-squared and Mean Squared Error (MSE).
 
 
-17. ## Let's start with Data Preparation.
+## 18. Let's start with Data Preparation.
 
 
-18. ## Prepare the features and labels for Paid Memberships
+## 19.  Prepare the features and labels for Paid Memberships
 
-19. ## Train a linear regression model for Paid Memberships
-
-
-20. ## Train a linear regression model for Total Memberships
+## 20. Train a linear regression model for Paid Memberships
 
 
-21. ## Make predictions
+## 21. Train a linear regression model for Total Memberships
 
 
-22. ## Calculate evaluation metrics
+## 22. Make predictions
 
 
-23. ## The evaluation metrics for the linear regression models are as follows:
+## 23. Calculate evaluation metrics
+
+
+## 24. The evaluation metrics for the linear regression models are as follows:
 
 **For Paid Memberships:**
 Mean Squared Error (MSE): 
@@ -156,16 +156,16 @@ Both models have high R2 values, which indicates a good fit to the observed data
 
 
 
-24. ## Create subplots
+## 25. Create subplots
 
-25. ## Plot for Paid Memberships with Predictions
-
-
-26. ## Plot for Total Memberships with Predictions
+## 26. Plot for Paid Memberships with Predictions
 
 
+## 27. Plot for Total Memberships with Predictions
 
-27. ## The plots above compare the actual data points (in blue) with the predictions made by the linear regression models (in red) for both paid and total memberships.
+
+
+## 28. The plots above compare the actual data points (in blue) with the predictions made by the linear regression models (in red) for both paid and total memberships.
 
 - Paid Memberships: Actual vs Predicted: The red line closely follows the actual data points, indicating a good fit for the model.
 
@@ -174,22 +174,22 @@ Both models have high R2 values, which indicates a good fit to the observed data
 *These visualizations confirm that the linear models are reasonably accurate for predicting future membership growth.*
 
 
-28. ## Now that we have validated models, we can use them to make future predictions for both paid and total memberships at Costco for the next few years.
+## 29. Now that we have validated models, we can use them to make future predictions for both paid and total memberships at Costco for the next few years.
 
 **Let's forecast the membership numbers for the years 2023 to 2033.**
 
 **I'll use the trained models to predict the memberships for these years.**
 
 
-29. ## Create an array for the future years
+## 30. Create an array for the future years
 
-30. ## Use the trained models to make predictions for future years
+## 31. Use the trained models to make predictions for future years
 
-31. ## Create a DataFrame to store the future predictions
+## 32. Create a DataFrame to store the future predictions
 
 
 
-32. ## According to these predictions:
+## 33. According to these predictions:
 
 - The number of Paid Memberships is expected to grow from approximately 67.34 million in 2023 to around 96.78 million by 2033.
 
@@ -197,17 +197,17 @@ Both models have high R2 values, which indicates a good fit to the observed data
 
 
  
-33. ## Now we can visualize these predictions
+## 34. Now we can visualize these predictions
 
-34. ## Create subplots
+## 35. Create subplots
 
-35. ## Plot for Predicted Paid Memberships
-
-
-36. ## Plot for Predicted Total Memberships
+## 36. Plot for Predicted Paid Memberships
 
 
-37. # Here are the visualizations for the predicted growth of Costco memberships worldwide from 2023 to 2033:
+## 37. Plot for Predicted Total Memberships
+
+
+# 38. Here are the visualizations for the predicted growth of Costco memberships worldwide from 2023 to 2033:
 
 - **Predicted Growth of Paid Memberships Worldwide (2023-2033): The green line indicates a steady growth in paid memberships, increasing from about 67 million in 2023 to approximately 97 million by 2033.**
 
