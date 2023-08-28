@@ -1,7 +1,6 @@
 # Costco-Membership-Growth
 
 
-# Costco Membership Growth Predictive Model
 
 ## Description
 
