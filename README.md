@@ -4,8 +4,10 @@
 
 ## Description
 
-**This model is an analysis and recommendation report focused on Costco Wholesale Incorporated's store #1201. The aim is to use advanced data analytics and machine learning methodologies to align with Costco's vision for 
- expansion and to enhance customer service from 2023 to 2033. The report provides historical context and discusses the store's membership trajectory since its launch in 2016.**
+**This model is an analysis and recommendation report focused on Costco Wholesale Incorporated's store #1201. The aim is to use advanced data analytics and machine 
+ learning methodologies to align with Costco's vision for 
+ expansion and to enhance customer service from 2023 to 2033. The report provides historical context and discusses the store's membership trajectory since its launch in 
+ 2016.**
 
 ## Languages and Utilities used
 
@@ -15,7 +17,7 @@
 ## Environments Used
 
 - Windows 11
-- Server August 2023
+- Server: 2023 version
 
 ## 1. Project walk-through
 
