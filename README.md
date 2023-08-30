@@ -4,7 +4,8 @@
 
 ## Description
 
-**The document is an analysis and recommendation report focused on Costco Wholesale Incorporated's store #1201. The aim is to use advanced data analytics and machine learning methodologies to align with Costco's vision for expansion and to enhance customer service from 2023 to 2033. The report provides historical context and discusses the store's membership trajectory since its launch in 2016.**
+**This model is an analysis and recommendation report focused on Costco Wholesale Incorporated's store #1201. The aim is to use advanced data analytics and machine learning methodologies to align with Costco's vision for 
+ expansion and to enhance customer service from 2023 to 2033. The report provides historical context and discusses the store's membership trajectory since its launch in 2016.**
 
 ## Languages and Utilities used
 
@@ -18,7 +19,7 @@
 
 ## 1. Project walk-through
 
-  *Uploaded several datasets and a visualization image:*
+ *Uploaded several datasets and a visualization image:*
 
 - Costco Global Membership revenue dataset.csv
 - statistic_id952763_costco_-paid-membership-worldwide-2014-2022.xlsx
@@ -58,9 +59,11 @@
 
  **We have found some numerical data in the Excel files:**
 
-- statistic_id952763_costco_-paid-membership-worldwide-2014-2022.xlsx: This file contains the number of paid Costco members worldwide from 2014 to 2019. The data starts from 42 million in 2014 and goes up to 53.9 million in 2019.
+- statistic_id952763_costco_-paid-membership-worldwide-2014-2022.xlsx: This file contains the number of paid Costco members worldwide from 2014 to 2019. The data starts from 42 million in 2014 and goes up to 53.9 million 
+  in 2019.
 
-- statistic_id718406_costco_-memberships-worldwide-2014-2022.xlsx: This file contains the number of Costco card holders worldwide from 2014 to 2019. The data starts from 76.4 million in 2014 and goes up to 98.5 million in 2019.
+- statistic_id718406_costco_-memberships-worldwide-2014-2022.xlsx: This file contains the number of Costco card holders worldwide from 2014 to 2019. The data starts from 76.4 million in 2014 and goes up to 98.5 million 
+  in 2019.
 
 - lafayette_parish_population_2023.csv: This dataset contains population data for areas in Lafayette Parish for the year 2023.
 
@@ -75,10 +78,12 @@
 - Evaluation: Evaluate the model's performance.
 - Prediction: Use the model to make future predictions.
   
-## 8. Let's start with the Data Preparation step. I'll combine the data from the two relevant Excel files— one containing the number of paid Costco members worldwide and the other containing the total number of Costco card holders worldwide. This will give us a more comprehensive view of membership growth
+## 8. Let's start with the Data Preparation step. I'll combine the data from the two relevant Excel files— one containing the number of paid Costco members worldwide and the other containing the total number of Costco 
+   card holders worldwide. This will give us a more comprehensive view of membership growth
 
 
-*It appears that the columns are not properly labeled, likely due to the way the Excel sheets were read. I'll clean up these datasets by appropriately renaming the columns and dropping any unnecessary ones. Then, we can proceed with the data merging and analysis.*
+*It appears that the columns are not properly labeled, likely due to the way the Excel sheets were read. I'll clean up these datasets by appropriately renaming the columns and dropping any unnecessary ones. Then, we can 
+ proceed with the data merging and analysis.*
 
 ## 9. Now we have a cleaned and merged dataset that contains the following information:
 
@@ -112,8 +117,9 @@
 
 
 
-## 17. I started with a simple linear regression model for its interpretability and ease of use. If the linear model performs reasonably well, it may serve our purpose. If not, we can explore more complex models like polynomial regression or even time series models.
-
+## 17. I started with a simple linear regression model for its interpretability and ease of use. If the linear model performs reasonably well, it may serve our purpose. If not, we can explore more complex models like 
+   polynomial regression or even time series models.
+ 
 - Data Preparation: Separate the features (Year) and labels (Paid_Memberships_Millions and Total_Memberships_Millions).
 - Train the Model: Fit a linear regression model to the data.
 - Evaluation: Evaluate the model's performance using metrics like R-squared and Mean Squared Error (MSE).
